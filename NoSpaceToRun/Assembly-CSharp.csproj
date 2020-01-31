@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AdjustBoxSize.cs" />
+    <Compile Include="Assets\AdjustTeamBox.cs" />
     <Compile Include="Assets\AirConsole\examples\basic\ExampleBasicLogic.cs" />
     <Compile Include="Assets\AirConsole\examples\gamestates\GamestateExampleLogic.cs" />
     <Compile Include="Assets\AirConsole\examples\gyroscope\GyroscopeExampleLogic.cs" />
