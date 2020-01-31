@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
 
     public GameObject playerPrefab;
+    public Transform parentObject;
 
     public Dictionary<int, PlayerActions> players = new Dictionary<int, PlayerActions>();
 
@@ -65,6 +66,7 @@ public class GameController : MonoBehaviour
         //Instantiate player prefab, store device id + player script in a dictionary
         GameObject newPlayer = Instantiate(playerPrefab, transform.position, transform.rotation) as GameObject;
         players.Add(deviceID, newPlayer.GetComponent<PlayerActions>());
+        newPlayer.transform.parent = parentObject;
     }
 
     void OnMessage(int from, JToken data)

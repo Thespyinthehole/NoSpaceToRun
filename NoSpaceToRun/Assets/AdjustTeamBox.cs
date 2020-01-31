@@ -5,10 +5,6 @@ using UnityEngine;
 [ExecuteInEditMode, RequireComponent(typeof(RectTransform))]
 public class AdjustTeamBox : MonoBehaviour
 {
-    public enum Team { One, Two };
-
-    public Team team;
-
     RectTransform rect;
     float xBuffer = 0;
     float yBuffer = 0;
