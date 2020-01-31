@@ -77,48 +77,50 @@
     <Compile Include="Assets\AirConsole\scripts\Settings.cs" />
     <Compile Include="Assets\AirConsole\scripts\WebsocketListener.cs" />
     <Compile Include="Assets\AirConsoleScripts\SayHello.cs" />
+    <Compile Include="Assets\InputMover.cs" />
+    <Compile Include="Assets\PlayerMovement.cs" />
     <None Include="Assets\AirConsole\README.txt" />
     <Reference Include="Unity.XR.Management">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0b6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -295,10 +297,10 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0b6/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Assets/AirConsole/plugins/Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Assets/AirConsole/plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/Unity/Projects/NoSpaceToRun/Assets/AirConsole/plugins/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Assets/AirConsole/plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0b6/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
