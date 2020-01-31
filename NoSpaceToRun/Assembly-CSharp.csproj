@@ -77,7 +77,9 @@
     <Compile Include="Assets\AirConsole\scripts\Settings.cs" />
     <Compile Include="Assets\AirConsole\scripts\WebsocketListener.cs" />
     <Compile Include="Assets\AirConsoleScripts\SayHello.cs" />
+    <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\InputMover.cs" />
+    <Compile Include="Assets\PlayerActions.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <None Include="Assets\AirConsole\README.txt" />
     <Reference Include="Unity.XR.Management">
