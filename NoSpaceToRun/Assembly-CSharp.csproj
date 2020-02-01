@@ -80,10 +80,14 @@
     <Compile Include="Assets\AirConsole\scripts\Settings.cs" />
     <Compile Include="Assets\AirConsole\scripts\WebsocketListener.cs" />
     <Compile Include="Assets\AirConsoleScripts\SayHello.cs" />
+    <Compile Include="Assets\CharacterResizer.cs" />
+    <Compile Include="Assets\CollisionBox.cs" />
     <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\InputMover.cs" />
     <Compile Include="Assets\PlayerActions.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\ShipCollider.cs" />
+    <Compile Include="Assets\SpaceBackGround.cs" />
     <None Include="Assets\AirConsole\README.txt" />
     <Reference Include="Unity.XR.Management">
       <HintPath>C:/Users/Joshua/Documents/GitHub/NoSpaceToRun/NoSpaceToRun/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>

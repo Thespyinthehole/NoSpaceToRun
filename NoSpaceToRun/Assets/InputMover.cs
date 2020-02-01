@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class InputMover : MonoBehaviour
 {
+    public float speed = 1;
     PlayerMovement player;
 
     private void Start()
@@ -17,6 +18,6 @@ public class InputMover : MonoBehaviour
         Vector2 move = Vector2.zero;
         move.x = Input.GetAxis("Horizontal");
         move.y = Input.GetAxis("Vertical");
-        player.MovePlayer(move);
+        player.MovePlayer(move * speed);
     }
 }

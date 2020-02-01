@@ -7,6 +7,8 @@ public class AdjustShipToBox : MonoBehaviour
 {
     RectTransform rect;
     public float buffer;
+    public float autoScale;
+
     private void Awake()
     {
         rect = GetComponent<RectTransform>();
@@ -24,7 +26,7 @@ public class AdjustShipToBox : MonoBehaviour
             float mul = xMul < yMul ? xMul : yMul;
             Vector2 scale = new Vector2(256, 128) * mul;
             rect.sizeDelta = scale;
-            Debug.Log("(" + width + ", " + height + ")");
+            autoScale = mul;
         }
     }
 }
