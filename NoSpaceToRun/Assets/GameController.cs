@@ -67,6 +67,7 @@ public class GameController : MonoBehaviour
         GameObject newPlayer = Instantiate(playerPrefab, transform.position, transform.rotation) as GameObject;
         players.Add(deviceID, newPlayer.GetComponent<PlayerActions>());
         newPlayer.transform.parent = parentObject;
+        newPlayer.SetActive(true);
     }
 
     void OnMessage(int from, JToken data)

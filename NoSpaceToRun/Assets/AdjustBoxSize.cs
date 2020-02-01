@@ -16,7 +16,19 @@ public class AdjustBoxSize : MonoBehaviour
         yBuffer = Mathf.Abs(rect.anchoredPosition.y);
     }
 
+    private void Start()
+    {
+        if (Application.isPlaying)
+            UpdateSize();
+    }
+
     void Update()
+    {
+        if (!Application.isPlaying)
+            UpdateSize(); 
+    }
+
+    void UpdateSize()
     {
         float height = Screen.height - 2 * yBuffer;
         float width = Screen.width / 2 - xBuffer * 1.5f;

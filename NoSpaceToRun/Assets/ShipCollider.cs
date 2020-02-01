@@ -7,7 +7,6 @@ public class ShipCollider : MonoBehaviour
 {
     public List<CollisionBox> colliderBoxs = new List<CollisionBox>();
     List<CollisionBox> lastColliderBoxs = new List<CollisionBox>();
-
     GameObject colliderParent;
 
     List<BoxCollider2D> colliders = new List<BoxCollider2D>() { null, null };
@@ -25,12 +24,23 @@ public class ShipCollider : MonoBehaviour
         colliderParent = t == null ? new GameObject("Colliders",typeof(RectTransform)) : t.gameObject;
         colliderParent.transform.parent = transform.parent;
         colliderParent.transform.localPosition = transform.localPosition;
-        DestroyImmediate(colliderParent.GetComponent<ShipCollider>());
+    }
+
+    private void Start()
+    {
+        if (Application.isPlaying)
+            UpdateColliders();
     }
 
     private void Update()
     {
-        if (isUpdated())
+        if (!Application.isPlaying)
+            UpdateColliders();
+    }
+
+    void UpdateColliders()
+    {
+        if (isUpdated() || Application.isPlaying)
         {
             for (int i = colliders.Count - 1; i >= 0; i--)
             {
@@ -47,7 +57,7 @@ public class ShipCollider : MonoBehaviour
 
             lastColliderBoxs = new List<CollisionBox>();
 
-            foreach(CollisionBox box in colliderBoxs)
+            foreach (CollisionBox box in colliderBoxs)
             {
                 lastColliderBoxs.Add(box.Copy());
             }

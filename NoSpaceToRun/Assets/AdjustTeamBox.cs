@@ -16,10 +16,22 @@ public class AdjustTeamBox : MonoBehaviour
         yBuffer = Mathf.Abs(rect.anchoredPosition.y);
     }
 
+    private void Start()
+    {
+        if (Application.isPlaying)
+            UpdateSize();
+    }
+
     void Update()
     {
+        if (!Application.isPlaying)
+            UpdateSize();
+    }
+
+    void UpdateSize()
+    {
         float height = Screen.height / 2 - yBuffer * 1.5f;
-        float width = Screen.width / 2 -  xBuffer * 1.5f;
+        float width = Screen.width / 2 - xBuffer * 1.5f;
         Vector2 scale = rect.sizeDelta;
         scale.y = height;
         scale.x = width;

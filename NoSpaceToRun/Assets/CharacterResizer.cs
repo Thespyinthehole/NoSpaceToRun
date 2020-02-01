@@ -17,6 +17,9 @@ public class CharacterResizer : MonoBehaviour
 
     private void Update()
     {
-        rect.sizeDelta = scaledTo.autoScale * baseSize;   
+        if (rect != null && scaledTo != null)
+            rect.sizeDelta = scaledTo.autoScale * baseSize;
+        else
+            rect = GetComponent<RectTransform>();
     }
 }

@@ -47,12 +47,21 @@
 				};
 
 				airconsole.message(AirConsole.SCREEN, message);
-				alert(message);
 				// airconsole.message(AirConsole.SCREEN, "How are you?");
+			}
+
+			function joinTeam(team){
+				var message = {
+					'action': 'joinTeam',
+					'info': { 'team': team }
+				};
+
+				airconsole.message(AirConsole.SCREEN, message);
 			}
 		</script>
 	</head>
 	<body onload="init()">
-		<button onclick="sendMessage()">Send</button>
+		<button onclick="joinTeam(1)">Join Team 1</button>
+		<button onclick="joinTeam(2)">Join Team 2</button>
 	</body>
 </html>

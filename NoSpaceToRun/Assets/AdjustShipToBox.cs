@@ -14,12 +14,24 @@ public class AdjustShipToBox : MonoBehaviour
         rect = GetComponent<RectTransform>();
     }
 
+    private void Start()
+    {
+        if (Application.isPlaying)
+            UpdateSize();
+    }
+
     private void Update()
     {
+        if (!Application.isPlaying)
+            UpdateSize();
+    }
+
+    void UpdateSize()
+    {
         RectTransform parent = transform.parent.GetComponent<RectTransform>();
-        if(parent != null)
+        if (parent != null)
         {
-            float width  = parent.sizeDelta.x - buffer;
+            float width = parent.sizeDelta.x - buffer;
             float height = parent.sizeDelta.y - buffer;
             float xMul = width / 256;
             float yMul = height / 128;
